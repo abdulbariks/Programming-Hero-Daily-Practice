@@ -3,56 +3,146 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Travel Blog</title>
-    <!-- this is the head section -->
+    <title>Blog Site</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1><i>My Travel Blog</i></h1>
-    <p>
-      Full Stack Developer specializing in Web Development. Experienced with all
-      stages of the development cycle for dynamic web projects. Well-versed in
-      numerous programming languages including HTML5, CSS,
-      JavaScript,React.Js,Next.Js,Node.Js, Express.Js, MongoDB, and MySQL. To
-      work in a dynamic position that will provide me an opportunity to utilize
-      and develop my creativity, capability, skill, and qualifications to face
-      the challenges of the day.
-    </p>
-    <button>Read More</button>
-
     <div>
-      <span><b>My Visited Place</b></span>
-      <ol>
-        <li>Cox's Bazar</li>
-        <li>Sundarbans</li>
-        <li>Srimangal</li>
-        <li>Saint Martin</li>
-        <li>Rangamati</li>
-        <li>Kuakata</li>
-      </ol>
+      <header>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blogs</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contract.html">Contract</a></li>
+        </ul>
+      </header>
+      <main>
+        <div>
+          <h1>Blog One</h1>
+          <img src="./images/20241105_184108.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            pariatur dolore unde officiis architecto! Placeat itaque dolorem
+            vero voluptatum corporis.
+          </p>
+        </div>
+        <div>
+          <h1>Blog Two</h1>
+          <img src="./images/20241105_184112.jpg" alt="Blog Two" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            pariatur dolore unde officiis architecto! Placeat itaque dolorem
+            vero voluptatum corporis.
+          </p>
+        </div>
+        <div>
+          <h1>Blog Three</h1>
+          <img src="./images/20241105_184118.jpg" alt="Blog Three" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            pariatur dolore unde officiis architecto! Placeat itaque dolorem
+            vero voluptatum corporis.
+          </p>
+        </div>
+        <div>
+          <h1>Blog Four</h1>
+          <img src="./images/20241105_184123.jpg" alt="Blog Four" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            pariatur dolore unde officiis architecto! Placeat itaque dolorem
+            vero voluptatum corporis.
+          </p>
+        </div>
+        <div>
+          <h1>Blog Four</h1>
+          <img src="./images/20241105_184123.jpg" alt="Blog Four" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            pariatur dolore unde officiis architecto! Placeat itaque dolorem
+            vero voluptatum corporis.
+          </p>
+        </div>
+      </main>
+      <main>
+        <div>
+          <h1>Blog One</h1>
+          <img src="./images/20241105_184108.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            pariatur dolore unde officiis architecto! Placeat itaque dolorem
+            vero voluptatum corporis.
+          </p>
+        </div>
+        <div>
+          <h1>Blog Two</h1>
+          <img src="./images/20241105_184112.jpg" alt="Blog Two" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            pariatur dolore unde officiis architecto! Placeat itaque dolorem
+            vero voluptatum corporis.
+          </p>
+        </div>
+        <div>
+          <h1>Blog Three</h1>
+          <img src="./images/20241105_184118.jpg" alt="Blog Three" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            pariatur dolore unde officiis architecto! Placeat itaque dolorem
+            vero voluptatum corporis.
+          </p>
+        </div>
+        <div>
+          <h1>Blog Four</h1>
+          <img src="./images/20241105_184123.jpg" alt="Blog Four" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            pariatur dolore unde officiis architecto! Placeat itaque dolorem
+            vero voluptatum corporis.
+          </p>
+        </div>
+        <div>
+          <h1>Blog Four</h1>
+          <img src="./images/20241105_184123.jpg" alt="Blog Four" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            pariatur dolore unde officiis architecto! Placeat itaque dolorem
+            vero voluptatum corporis.
+          </p>
+        </div>
+      </main>
+      <main class="contract">
+        <div class="form-container">
+          <h1>Contract Form</h1>
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="full-name">Full Name</label>
+              <input type="text" id="full-name" name="full_name" required />
+            </div>
 
-      <span><b>My Favourite Food</b></span>
-      <ul>
-        <li><b>Pizza</b></li>
-        <li><b>Sushi</b></li>
-        <li><b>Chocolate</b></li>
-        <li><b>Ice Cream</b></li>
-        <li><b>Pasta</b></li>
-        <li><b>Burgers</b></li>
-      </ul>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+
+            <div class="form-group">
+              <label for="details">Contract Details</label>
+              <textarea id="details" name="details" required></textarea>
+            </div>
+
+            <div class="form-group">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </main>
+      <footer>
+        <p>&copy 2025 All Right Reserved</p>
+      </footer>
     </div>
-    <img
-      src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      alt="food"
-      width="360px"
-      height="360px"
-    />
-    <br />
-    <br />
-    <a
-      href="https://www.youtube.com/watch?v=ptYLNVwOX9c"
-      target="_blank"
-      rel="noopener noreferrer"
-      >youtube</a
-    >
   </body>
 </html>
