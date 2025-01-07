@@ -1,334 +1,177 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
-#hero {
-  background: linear-gradient(
-      0deg,
-      rgb(9, 9, 9) 2.884%,
-      rgba(16, 16, 16, 0) 101.034%
-    ),
-    url("../assets/hero-bg.png");
-  height: 652px;
-  width: 1363px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#section-one {
+  width: 1320px;
+  height: 600px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgb(7, 2, 17), rgba(7, 2, 17, 0) 100%),
+    url("../images/Banner\ Image.png");
 }
 
-#hero .hero-section {
+#section-one .content {
   position: absolute;
-  width: 726px;
-  height: 277px;
-  left: 318px;
-  top: 187px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 22;
-  padding: 0px;
+  width: 632px;
+  height: 246px;
+  left: 484px;
+  right: -484px;
+  top: 227px;
+  bottom: -227px;
 }
 
-#hero .hero-section .subtittle {
+#section-one .content .subtitle {
   color: rgb(255, 255, 255);
-  font-family: Work Sans;
-  font-size: 22px;
-  font-weight: 426;
-  line-height: 26px;
-  letter-spacing: 0%;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-#hero .hero-section .tittle {
-  color: rgb(255, 255, 255);
-  font-family: Work Sans;
-  font-size: 45px;
-  font-weight: 497;
-  line-height: 56px;
-  letter-spacing: 0%;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-#hero .hero-section .description {
-  color: rgb(255, 255, 255);
-  font-family: Work Sans;
-  font-size: 13px;
-  font-weight: 355;
-  line-height: 19px;
-  letter-spacing: 0%;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-#hero .hero-section .btn button {
-  border-radius: 8px;
-  background: rgb(82, 195, 3);
-  padding: 15px;
-  font-family: Work Sans;
-}
-
-#main {
-  width: 937px;
-  margin: 30px auto;
-}
-
-#main .main-section .subtittle {
-  color: rgb(16, 16, 16);
-  font-family: Work Sans;
-  font-size: 17px;
-  font-weight: 355;
-  line-height: 19px;
-  letter-spacing: 0%;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-#main .main-section .tittle {
-  color: rgb(16, 16, 16);
-  font-family: Work Sans;
-  font-size: 34px;
-  font-weight: 497;
-  line-height: 45px;
-  letter-spacing: 0%;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-#main .main-section .cart-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-#main .main-section .cart {
-  max-width: 250px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-}
-#main .main-section .cart .cart-img {
-  width: 250px;
-}
-.cart .cart-img img {
-  width: 100%;
-}
-
-#main .main-section .cart .btn button {
-  background: rgba(122, 202, 64, 0.15);
-  color: rgb(16, 16, 16);
-  font-family: Work Sans;
-  font-size: 18px;
+  font-family: Merriweather;
+  font-size: 32px;
   font-weight: 400;
-  line-height: 20px;
-  padding: 5px;
+  line-height: 40px;
+  letter-spacing: 0%;
   text-align: center;
 }
 
-#main .main-section .btn {
+#section-one .content .title {
   color: rgb(255, 255, 255);
-  font-family: Work Sans;
-  font-size: 20px;
-  font-weight: 480;
-  line-height: 17px;
+  font-family: Merriweather;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 95px;
+  letter-spacing: 0%;
   text-align: center;
 }
-#main .main-section .btn button {
-  background: rgba(102, 238, 5, 0.904);
-  padding: 10px;
-  margin-top: 15px;
+
+#section-two {
+  width: 802.9px;
+  height: 651px;
+  /* left: 399px;
+  right: -399px;
+  top: 925px;
+  bottom: -770px; */
+  margin: 0 auto;
 }
 
-#about-us {
-  background: rgb(255, 255, 255);
-  width: 1363px;
-  height: 476px;
-}
-#about-us .about-us-section {
-  display: flex;
-}
-
-#about-us .about-us-section .about-img {
-  width: 681px;
-  height: 476px;
-  left: 0;
-  top: 0;
-}
-#about-us .about-us-section .about-img img {
-  width: 100%;
-}
-
-#about-us .about-us-section .right-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#about-us .about-us-section .right-section .title {
-  width: 571px;
-  height: 127px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 17;
-}
-
-#about-us .about-us-section .right-section h2 {
-  color: rgb(16, 16, 16);
-  font-family: Work Sans;
-  font-size: 34px;
-  font-weight: 497;
-  line-height: 45px;
+#section-two h2 {
+  color: rgb(255, 0, 0);
+  font-family: Inter;
+  font-size: 88px;
+  font-weight: 700;
+  line-height: 107px;
+  letter-spacing: 0%;
   text-align: center;
-  margin-bottom: 10px;
 }
 
-#about-us .about-us-section .right-section p {
-  color: rgb(16, 16, 16);
-  font-family: Work Sans;
-  font-size: 17px;
-  font-weight: 355;
-  line-height: 19px;
+#section-two h4 {
+  color: rgb(255, 0, 0);
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+#section-two h3 {
+  color: rgb(7, 2, 17);
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+#section-two img {
+  background: url(happy-new-year-3d-letters-sign-coloful-background-blurred-fireworks-2024-new-year-party);
+}
+
+#section-three {
+  width: 1320px;
+  height: 600px;
+  margin-top: 50px;
+  border-radius: 16px;
+  background: linear-gradient(90deg, rgb(7, 2, 17), rgba(7, 2, 17, 0) 100%),
+    url("../images/Vectorrr.png");
+}
+.section-three-content {
+  margin: 0 auto;
+}
+
+#section-three h2 {
+  width: 642px;
+  height: 176px;
+  padding: 126px 552px 0px 126px;
+  color: rgb(255, 255, 255);
+  font-family: Merriweather;
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 88px;
   text-align: left;
 }
 
-#about-us .about-us-section .right-section .follow-us {
-  width: 571px;
-  height: 69px;
-  box-sizing: border-box;
-  border-bottom: 1px solid rgba(16, 16, 16, 0.2);
-  border-top: 1px solid rgba(16, 16, 16, 0.2);
-  color: rgb(16, 16, 16);
-  font-family: Work Sans;
-  font-size: 22px;
-  line-height: 26px;
-  text-align: center;
-  margin-top: 30px;
-  font-weight: bold;
-  padding: 15px;
+#section-three p {
+  left: 266px;
+  right: 357px;
+  padding: 24px 497px 0px 126px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
 }
-
-#about-us .about-us-section .right-section .social-icon {
-  width: 184.23px;
-  height: 28px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 30px;
+#section-three .span {
+  width: 103px;
+  height: 24px;
+  padding: 48px 0px 0px 158px;
 }
-
-.fa {
-  padding: 10px;
+#section-three span {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
   font-size: 20px;
-  width: 20px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
-
-.fa:hover {
-  opacity: 0.7;
-}
-
-.fa-facebook {
-  background: linear-gradient(
-    180deg,
-    rgb(0, 178, 255) -0.911%,
-    rgb(0, 106, 255) 104.264%
-  );
-}
-
-.fa-twitter {
-  background: rgb(255, 255, 255);
-}
-
-.fa-instagram {
-  background: radial-gradient(
-    103% 103% at 61% 105%,
-    rgba(140, 58, 170, 0) 64%,
-    rgb(140, 58, 170) 100%
-  );
-}
-
-.fa-pinterest {
-  background: rgb(230, 8, 8);
-}
-
-#footer {
-  background: rgb(255, 255, 255);
-  width: 1363px;
-  height: 476px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-section {
-  width: 589px;
-  height: 282px;
-  left: 391px;
-  top: 97px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-section h2 {
-  color: rgb(16, 16, 16);
-  font-family: Work Sans;
-  font-size: 34px;
-  font-weight: 497;
-  line-height: 45px;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.footer-section p {
-  color: rgb(16, 16, 16);
-  font-family: Work Sans;
-  font-size: 17px;
-  font-weight: 355;
-  line-height: 19px;
+  font-weight: 700;
+  line-height: 24px;
   letter-spacing: 0%;
   text-align: center;
-  margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
-.footer-section .follow-us {
-  width: 571px;
-  height: 69px;
-  box-sizing: border-box;
-  border-bottom: 1px solid rgba(16, 16, 16, 0.2);
-  border-top: 1px solid rgba(16, 16, 16, 0.2);
-  color: rgb(16, 16, 16);
-  font-family: Work Sans;
-  font-size: 22px;
-  line-height: 26px;
+#section-four {
+  width: 1320px;
+  height: 482px;
+  border-radius: 16px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 0, 0, 0.1),
+    rgba(255, 0, 0, 0) 100%
+  );
   text-align: center;
-  margin-top: 30px;
-  font-weight: bold;
+  padding-top: 100px;
+}
+
+.btn {
+  border-radius: 8px;
+  background: rgb(255, 0, 0);
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#section-four .span {
+  color: rgb(255, 0, 0);
+}
+
+.section-four-content h2 {
   padding: 15px;
 }
 
-.footer-section .social-icon {
-  width: 184.23px;
-  height: 28px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 30px;
+.section-four-content .time {
+  margin-bottom: 40px;
 }
