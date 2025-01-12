@@ -3,56 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Travel Blog</title>
-    <!-- this is the head section -->
+    <title>Positioning</title>
+    <style>
+      .main-div {
+        display: flex;
+        width: 100%;
+        height: 500px;
+        background: rgb(173, 157, 189);
+      }
+      .blue {
+        position: relative;
+        z-index: 11;
+        left: 150px;
+        height: 300px;
+        width: 300px;
+        background: blue;
+      }
+      .green {
+        z-index: 10;
+        margin: 20px;
+        height: 300px;
+        width: 500px;
+        background: green;
+      }
+      .red {
+        position: fixed;
+        z-index: 10;
+        left: 200px;
+        margin: 20px;
+        height: 300px;
+        width: 600px;
+        background: red;
+      }
+
+      .white {
+        z-index: 10;
+        margin: 20px;
+        height: 300px;
+        width: 500px;
+        background: rgb(102, 35, 35);
+      }
+    </style>
   </head>
   <body>
-    <h1><i>My Travel Blog</i></h1>
-    <p>
-      Full Stack Developer specializing in Web Development. Experienced with all
-      stages of the development cycle for dynamic web projects. Well-versed in
-      numerous programming languages including HTML5, CSS,
-      JavaScript,React.Js,Next.Js,Node.Js, Express.Js, MongoDB, and MySQL. To
-      work in a dynamic position that will provide me an opportunity to utilize
-      and develop my creativity, capability, skill, and qualifications to face
-      the challenges of the day.
-    </p>
-    <button>Read More</button>
-
-    <div>
-      <span><b>My Visited Place</b></span>
-      <ol>
-        <li>Cox's Bazar</li>
-        <li>Sundarbans</li>
-        <li>Srimangal</li>
-        <li>Saint Martin</li>
-        <li>Rangamati</li>
-        <li>Kuakata</li>
-      </ol>
-
-      <span><b>My Favourite Food</b></span>
-      <ul>
-        <li><b>Pizza</b></li>
-        <li><b>Sushi</b></li>
-        <li><b>Chocolate</b></li>
-        <li><b>Ice Cream</b></li>
-        <li><b>Pasta</b></li>
-        <li><b>Burgers</b></li>
-      </ul>
+    <div class="main-div">
+      <div class="white"></div>
+      <div class="blue"></div>
+      <div class="red"></div>
+      <div class="green"></div>
     </div>
-    <img
-      src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      alt="food"
-      width="360px"
-      height="360px"
-    />
-    <br />
-    <br />
-    <a
-      href="https://www.youtube.com/watch?v=ptYLNVwOX9c"
-      target="_blank"
-      rel="noopener noreferrer"
-      >youtube</a
-    >
   </body>
 </html>
