@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        background: #b37171;
+        width: 100%;
+        height: 600px;
+        padding: 30px;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 33% auto;
+      }
+      .left {
+        background: #791010;
+        width: 100%;
+      }
+      .right {
+        background: #107938;
+        width: 100%;
+        display: grid;
+        gap: 20px;
+      }
+      .right-top {
+        background: #791010;
+        grid-column: 1 / span 2;
+      }
+      .right-buttom-left {
+        background: #e7d803;
+        grid-column: 1;
+        grid-row: 2;
+      }
+      .right-buttom-right {
+        background: #351079;
+        grid-column: 2;
+        grid-row: 2;
+      }
+
+      @media only screen and (max-width: 500px) {
+        .container {
+          background: #b37171;
+          width: 100%;
+          height: 600px;
+          padding: 30px;
+          display: grid;
+          gap: 20px;
+          grid-template-columns: auto;
+        }
+        .left {
+          background: #791010;
+        }
+        .right {
+          background: #107938;
+          display: grid;
+          gap: 20px;
+        }
+
+        .right-top {
+          background: #791010;
+        }
+        .right-buttom-left {
+          background: #e7d803;
+        }
+        .right-buttom-right {
+          background: #351079;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">1</div>
+      <div class="right">
+        <div class="right-top">2</div>
+        <div class="right-buttom-left">3</div>
+        <div class="right-buttom-right">4</div>
+      </div>
+    </div>
+  </body>
+</html>
