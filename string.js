@@ -13,3 +13,9 @@ console.log(str.charCodeAt(1));
 let str1 = "Hello";
 let str2 = " World";
 console.log(str1.concat(str2));
+console.log("Hello ".repeat(5));
+
+let str3 = "exa  mple";
+let noSpaces = str3.replace(/\s/g, "");
+
+console.log(noSpaces);
