@@ -69,3 +69,10 @@ function taskFive(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 console.log(taskFive(10, 20));
+
+function namota(number) {
+  for (let index = 1; index <= 10; index++) {
+    console.log(`${number} * ${index} = ${number * index}`);
+  }
+}
+namota(7);
