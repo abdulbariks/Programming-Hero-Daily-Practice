@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Object Model</title>
+  </head>
+  <body onclick="myFunction()">
+    <h1>The Document Object</h1>
+    <h2>The activeElement Property</h2>
+    <input type="text" value="An input field" />
+    <button>A Button</button>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <script>
+      let url = window.document.URL;
+      document.getElementById("demo1").innerText = url;
+      document.getElementById("demo2").innerHTML = url;
+
+      <!-- activeElement -->
+      function myFunction() {
+        const element = document.activeElement.tagName;
+        document.getElementById("demo3").innerHTML = element;
+      }
+
+      document.addEventListener("click", myFunction);
+      function myFunction() {
+        document.getElementById("demo4").innerHTML = "Hello World";
+      }
+
+      const allTagLists = document.getElementsByTagName("h1");
+      for (allTagList of allTagLists) {
+        console.log(allTagList.innerText);
+      }
+      // Access the first paragraph
+      const para = document.getElementsByTagName("p").item(0);
+      para.firstChild.data = "This is the first paragraph";
+
+      // Create a new Text node for the second paragraph
+      const newText = document.createTextNode("This is the second paragraph.");
+
+      // Create a new Element to be the second paragraph
+      const newElement = document.createElement("p");
+
+      // Put the text in the paragraph
+      newElement.appendChild(newText);
+
+      // Put the paragraph on the end of the document by appending it to
+      // the body (which is the parent of para)
+      para.parentNode.appendChild(newElement);
+    </script>
+  </body>
+</html>
