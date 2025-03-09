@@ -34,3 +34,11 @@ console.log(sum(1, 3, 5, 2, 5));
 // 6. Default Parameters
 const persen1 = (name = "Barik") => console.log(`hello ${name}`);
 persen1();
+
+function min(nums) {
+  return Math.min(nums);
+}
+console.log(min(1, 3, 2));
+
+if (10 === "10") {
+}
