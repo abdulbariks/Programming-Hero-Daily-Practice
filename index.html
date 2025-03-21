@@ -3,27 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fetch API</title>
-    <style>
-      .users-section {
-        margin: 20px;
-      }
-      #users-cart {
-        display: flex;
-        flex-wrap: wrap;
-      }
-      .cart {
-        border-style: dotted;
-        border-width: 2px;
-        padding: 10px;
-        margin: 10px;
-      }
-    </style>
+    <title>Local Storage</title>
   </head>
   <body>
-    <section class="users-section">
-      <div id="users-cart"></div>
-    </section>
-    <script src="./fetch.js"></script>
+    <div>
+      <input id="name" type="text" placeholder="Enter Your Name" />
+      <input id="email" type="text" placeholder="Enter Your Email" />
+      <input id="age" type="text" placeholder="Enter Your Age" />
+      <button onclick="submitBtn()" type="button">Submit</button>
+    </div>
+    <div id="show-user"></div>
+    <button onclick="clearBtn()">Clear Data</button>
+    <script src="./index.js"></script>
   </body>
 </html>
